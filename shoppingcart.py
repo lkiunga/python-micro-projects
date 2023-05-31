@@ -1,4 +1,6 @@
 shopping_cart = {}
+shopping_cart["Biscuits"] = 10
+shopping_cart["chocolates"] = 25
 
 #Get user to add items to the dictionary
 for i in range(2):
@@ -9,17 +11,17 @@ for i in range(2):
 
 print(shopping_cart)
 # remove an item from the list
-#item_remove = input("Item to remove from shopping list ")
-#del shopping_cart[item_remove]
+item_remove = input("Item to remove from shopping list ")
+del shopping_cart[item_remove]
 
 # print out each item name and price
 print(shopping_cart)
 total_sum = 0
 
 # sum up the prices in a dictionary
-for i in shopping_cart:
-    total_sum += shopping_cart[item_price]
+for price in shopping_cart:
 
+    total_sum = shopping_cart[item_name] + total_sum
+# print the total sum   
 print(total_sum)
     
-print(shopping_cart.values())
