@@ -20,8 +20,9 @@ total_sum = 0
 
 # sum up the prices in a dictionary
 for price in shopping_cart:
+    
 
-    total_sum = shopping_cart[item_name] + total_sum
+total_sum = shopping_cart[item_name] + total_sum
 # print the total sum   
 print(total_sum)
     
