@@ -9,7 +9,7 @@ print(f"Tip = ${'%.2f' % tip}")
 sTaxPercentange = 0.07
 salesTax = sTaxPercentange * foodCharge
 print(f"Sales Tax = ${'%.2f' %salesTax}")
-
+#trying to keep up with the sharing and chasing the greenlight
 total =foodCharge + tip + salesTax
 print(f"Grand Total = ${'%.2f'% total}")
 print(3+5.0)
