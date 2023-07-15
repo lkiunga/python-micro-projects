@@ -47,7 +47,58 @@ print(groups_per_user({
     "administrator": ["admin"]
 }))
 
+#tASK 3
 wardrobe = {'shirt': ['red', 'blue', 'white'], 'jeans': ['blue', 'black']}
 new_items = {'jeans': ['white'], 'scarf': ['yellow'], 'socks': ['black', 'brown']}
 wardrobe.update(new_items)
 print(wardrobe)
+
+
+#Task 4
+# The network() function accepts a dictionary "servers" as a parameter.
+def network(servers):
+
+    # A string variable is initialized to hold the "result". 
+    result = ""
+
+    # For each "hostname" (key) and "IP address" (value) in the "server" dictionary items...
+    for hostname, IP_address in servers.items():
+
+        # A string identifying the hostname and IP address for each server is added
+        # to the "result" variable. The string .format() function and is used to plug
+        # the hostname and IP_address variables into the designated {} placeholders
+        # within the string.
+        result += "The IP address of the {} server is {}".format(hostname, IP_address) + "\n"
+    
+    # Return the "result" variable string.
+    return result 
+
+# Call the "network" function with the dictionary. 
+print(network({"Domain Name Server":"8.8.8.8", "Gateway Server":"192.168.1.1", "Print Server":"192.168.1.33", "Mail Server":"192.168.1.190"}))
+
+#Task 5
+def countries(countries_dict):
+    result = ""
+    # Complete the for loop to iterate through the key and value items 
+    # in the dictionary.
+    for key, values in countries_dict.items():
+        # Use a string method to format the required string.
+        result += "{}\n".format(values)
+    return result
+
+print(countries({"Africa": ["Kenya", "Egypt", "Nigeria"], "Asia":["China", "India", "Thailand"], "South America": ["Ecuador", "Bolivia", "Brazil"]}))
+
+#Task 5
+def setup_guests(guest_list):
+    # loop over the guest list and add each guest to the dictionary with
+    # an initial value of 0
+    result = {} # Initialize a new dictionary 
+    for guest in guest_list: # Iterate over the elements in the list 
+        result[guest]= 0 # Add each list element to the dictionary as a key with 
+            # the starting value of 0
+    return result
+
+guests = ["Adam","Camila","David","Jamal","Charley","Titus","Raj","Noemi","Sakira","Chidi"]
+
+print(setup_guests(guests))
+

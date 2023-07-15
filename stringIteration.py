@@ -37,3 +37,11 @@ def pig_latin(text):
 		
 print(pig_latin("hello how are you")) # Should be "ellohay owhay reaay ouyay"
 print(pig_latin("programming in python is fun")) # Should be "rogrammingpay niay ythonpay siay unfay"
+
+genre = "transcendental"
+print(genre[:-8])
+print(genre[-7:9])
+
+car_makes = ["Ford", "Volkswagen", "Toyota"]
+car_makes.remove("Ford")
+print (car_makes)

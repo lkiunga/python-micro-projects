@@ -2,6 +2,7 @@
 shopping_cart = {}
 shopping_cart["Biscuits"] = 10
 shopping_cart["chocolates"] = 25
+print(shopping_cart.values())
 
 #Get user to add items to the dictionary
 for i in range(2):
